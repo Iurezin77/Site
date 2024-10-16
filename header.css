@@ -1,10 +1,15 @@
+.lista-menu__titulo,
+.lista-menu__item {
+  padding: 1em;
+  background-color: var(--branco);
+}
 .lista-menu {
 display: none;
 position: absolute;
 top: 100%;
 }
 .container__botao:checked ~ .lista-menu {
-    display: block;
+    display: none;
 }
 .cabecalho {
     background-color: var(--branco);
@@ -13,3 +18,14 @@ top: 100%;
     align-items: center;
     position: relative;
 }
+.lista-menu__titulo {
+    color: var(--verde);
+    font-weight: 700;
+  }
+  .lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+  }
